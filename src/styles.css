@@ -28,3 +28,17 @@ body {
 
 .grid-btn {
 }
+
+/* MOBILE STYLES */
+
+/* SMALL TABLET STYLES */
+@media screen and (min-width: 620px) {
+}
+
+/* LARGE TABLET & LAPTOP STYLES */
+@media screen and (min-width: 960px) {
+}
+
+/* DESKTOP STYLES */
+@media screen and (min-width: 1200px) {
+}
