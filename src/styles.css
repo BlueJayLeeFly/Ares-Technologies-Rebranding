@@ -6,6 +6,9 @@
 /* Reset */
 body,
 a,
+h1,
+h2,
+h3,
 ul,
 li {
 	margin: 0;
@@ -26,19 +29,138 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+header {
+	height: 100vh;
+	background: url(../assets/about_us_hero_620.jpg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+nav {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../assets/menu_background_620.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+nav ul li {
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 2;
+	color: white;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
 .grid-btn {
+	display: inline-block;
 }
 
 /* MOBILE STYLES */
 
+/* -- Nav Section */
+#menu-btn {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	background-color: var(--primary-color);
+	padding: 7px 6px 5px 6px;
+	border: none;
+	border-radius: 100%;
+}
+
+/* -- Hero Section -- */
+.hero {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-container {
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+}
+
+.hero-container h1 {
+	font-size: 6rem;
+}
+
+.hero-container h2 {
+	font-size: 2rem;
+	font-weight: 400;
+	margin-top: -15px;
+	margin-bottom: 10px;
+}
+
+.hero-container h3 {
+	font-size: 1rem;
+	font-weight: 300;
+}
+
 /* SMALL TABLET STYLES */
 @media screen and (min-width: 620px) {
+	header {
+		background: url(../assets/about_us_hero.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
+	nav {
+		background: url(../assets/menu_background.jpg) center center no-repeat;
+		background-size: cover;
+	}
 }
 
 /* LARGE TABLET & LAPTOP STYLES */
 @media screen and (min-width: 960px) {
+	header {
+		background: url(../assets/about_us_hero.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
+	nav {
+		background: url(../assets/menu_background.jpg) center center no-repeat;
+		background-size: cover;
+	}
 }
 
 /* DESKTOP STYLES */
 @media screen and (min-width: 1200px) {
+	header {
+		background: url(../assets/about_us_hero.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
+	nav {
+		background: url(../assets/menu_background.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
+	nav ul li {
+		font-size: 3rem;
+	}
+
+	.hero-container h1 {
+		font-size: 12.5rem;
+	}
+
+	.hero-container h2 {
+		font-size: 4.37rem;
+		font-weight: 400;
+		margin-top: -45px;
+		margin-bottom: 20px;
+	}
+
+	.hero-container h3 {
+		font-size: 2.25rem;
+		font-weight: 400;
+	}
 }
