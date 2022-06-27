@@ -58,6 +58,11 @@ nav ul li {
 	color: white;
 	font-size: 1.5rem;
 	cursor: pointer;
+	transition: color 0.7s;
+}
+
+nav ul li:hover {
+	color: var(--primary-color);
 }
 
 button {
@@ -137,6 +142,10 @@ button {
 
 /* -- Grid photo card -- */
 
+.photo-grids {
+	background-color: var(--primary-color);
+}
+
 .grid-card {
 	display: flex;
 	flex-direction: column;
@@ -211,15 +220,30 @@ button {
 /* -- Footer -- */
 
 footer {
-	width: 100%;
 	height: 489px;
 	background: url(../assets/about_us_footer_620.jpg) 40% center no-repeat;
 	background-size: cover;
+	color: white;
 	padding: 30px;
 }
 
+footer h3 {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
 .footer-links {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	line-height: 2;
+	border: 1px solid white;
 	color: white;
+	cursor: pointer;
+}
+
+.copy-right {
+	text-align: center;
 }
 
 /* SMALL TABLET STYLES */

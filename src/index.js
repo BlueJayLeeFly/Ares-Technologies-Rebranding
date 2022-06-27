@@ -1,9 +1,10 @@
 // DOM
 const menuButton = document.getElementById('menu-btn');
 
-// Boolean
+// Boolean variables
 let isMenuOpen = false;
 
+// Set up animation
 let menuAnimation = gsap.fromTo(
 	'nav',
 	{ opacity: 0 },
