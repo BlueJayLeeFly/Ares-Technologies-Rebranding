@@ -242,6 +242,10 @@ footer h3 {
 	cursor: pointer;
 }
 
+.footer-right {
+	display: none;
+}
+
 .copy-right {
 	text-align: center;
 }
