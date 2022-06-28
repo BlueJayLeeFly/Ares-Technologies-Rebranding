@@ -118,17 +118,27 @@ button {
 	position: relative;
 	z-index: 99;
 	text-align: center;
-	color: var(--font-color);
 	padding: 5%;
 }
 
 .bridge h2,
 .bridge h3 {
+	color: var(--font-color);
 	text-transform: uppercase;
 	position: inherit;
 }
 
+.bridge h2 {
+	font-size: 2rem;
+	margin-bottom: 5px;
+}
+
+.bridge h3 {
+	font-weight: 400;
+}
+
 .bridge p {
+	line-height: 2rem;
 	position: inherit;
 }
 
@@ -251,7 +261,7 @@ footer h3 {
 }
 
 /* SMALL TABLET STYLES */
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 768px) {
 	header {
 		background: url(../assets/about_us_hero.jpg) center center no-repeat;
 		background-size: cover;
@@ -260,6 +270,93 @@ footer h3 {
 	nav {
 		background: url(../assets/menu_background.jpg) center center no-repeat;
 		background-size: cover;
+	}
+
+	nav ul li {
+		font-size: 3rem;
+	}
+
+	.hero-container h1 {
+		font-size: 10rem;
+	}
+
+	.hero-container h2 {
+		font-size: 3.3rem;
+		font-weight: 400;
+		margin-top: -15px;
+		margin-bottom: 10px;
+	}
+
+	.hero-container h3 {
+		font-size: 2rem;
+		font-weight: 300;
+	}
+
+	.divider-minus {
+		height: 120px;
+	}
+
+	.card-1 {
+		margin-top: -85px;
+	}
+
+	.bridge {
+		padding: 9%;
+	}
+
+	.bridge h2 {
+		font-size: 2.9rem;
+		font-weight: 700;
+	}
+
+	.bridge h3 {
+		font-size: 1.8rem;
+	}
+
+	.bridge p {
+		font-size: 1.3rem;
+	}
+
+	.grid-card h2 {
+		font-size: 2.9rem;
+	}
+
+	.grid-card h3 {
+		font-size: 1.8rem;
+	}
+
+	.grid-card button {
+		font-size: 1.7rem;
+	}
+
+	.grid-card {
+		height: 550px;
+		padding-bottom: 120px;
+	}
+
+	.divider-plus {
+		height: 95px;
+		margin-top: -85px;
+	}
+
+	footer {
+		height: 490px;
+		padding-top: 130px;
+	}
+
+	footer .wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 25px;
+		margin-bottom: 30px;
+	}
+
+	footer h3 {
+		font-size: 1.8rem;
+	}
+
+	footer li {
+		font-size: 1.5rem;
 	}
 }
 
