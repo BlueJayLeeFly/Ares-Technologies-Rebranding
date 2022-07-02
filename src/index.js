@@ -1,19 +1,14 @@
+import { menuAnimation } from './animation.js';
+
 // DOM
 const menuButton = document.getElementById('menu-btn');
 
 // Boolean variables
 let isMenuOpen = false;
 
-// Set up animation
-let menuAnimation = gsap.fromTo(
-	'nav',
-	{ opacity: 0 },
-	{ duration: 0.7, ease: 'power1', display: 'flex', opacity: 1 }
-);
-menuAnimation.pause();
-
 // Menu button event handling
 menuButton.addEventListener('click', () => {
+	console.log('click');
 	if (!isMenuOpen) {
 		menuAnimation.play();
 		gsap.fromTo(
